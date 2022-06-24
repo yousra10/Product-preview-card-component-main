@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+:root {
+  /*primary colors*/
+  --clr-dark-cyan: hsl(158, 36%, 37%);
+  --clr-cream: hsl(30, 38%, 92%);
+
+  /*neutral colors*/
+  --clr-very-dark-blue: hsl(212, 21%, 14%);
+  --clr-dark-grayish-blue: hsl(228, 12%, 48%);
+  --clr-white: hsl(0, 0%, 100%);
+  /*ff*/
+  --ff-montserrat: 'Montserrat', sans-serif;
+  --ff-fraunces:'Fraunces', serif;
+  --font-size: 14px;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  background-position: left top, bottom right;
+  margin: 0;
+  padding: 0;
+  margin: auto;
+  line-height: 1.5;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: var(--clr-cream);
+}
+
+img{
+  width:350px;
+  height:400px;
+  border-radius: 10px 0 0 10px;
+}
+
+h1{
+  font-family: var(--ff-montserrat);
+  font-weight: 500;
+font-size: 15px;
+letter-spacing: 0.3rem;
+}
+
+p,h1{
+  color: var(--clr-dark-grayish-blue);
+}
+
+
+h2{
+font-family: var(--ff-fraunces);
+}
+
+button{
+  background-color: var(--clr-dark-cyan);
+  border-color: var(--clr-dark-cyan);
+  border-radius: 10px;
+  padding:10px;
+  width:270px;
+  height:
+  color:var(--clr-white);
+
+}
+
+
+ul{
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul, li{
+  display:table-cell;
+}
+li{
+padding-top: 10px;
+}
+
+
+.button{
+background-image: url('images/icon-cart.svg');
+background-repeat: no-repeat;
+background-position: 30% 50% ;
+cursor:pointer;
+background-color: var(--clr-dark-cyan);
+border-color: var(--clr-dark-cyan);
+border-radius: 10px;
+padding:10px;
+width:270px;
+color:var(--clr-white);
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  width:700px;
+  height:400px;
+  background-color: var(--clr-white);
+margin:60px auto;
+border-radius: 10px;
+}
+
+.right{
+  padding: 10px 40px;
+}
+
+.reduction-price{
+  padding-right: 40px;
+  color:var(--clr-dark-cyan);
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.original-price{
+font-size: 13px;
+font-weight: lighter;
+text-decoration: line-through;
+}
+
+
+
+@media (max-width:802px) {
+
+.container{
+  display:flex;
+  flex-direction: column;
+  width:350px;
+  height:700px;
+  background-color: var(--clr-white);
+margin:60px auto;
+border-radius: 10px;
+}
+
+img{
+  width:350px;
+  height:300px;
+  border-radius: 10px 10px 0 0;
+}
+
+}
+
+
+  .attribution { font-size: 11px; text-align: center; }
+  .attribution a { color: hsl(228, 45%, 44%); }
